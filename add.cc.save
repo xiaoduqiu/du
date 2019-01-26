@@ -1,13 +1,44 @@
 #include <iostream>
-using namespace std;
-int main()
+ using namespace std;
+
+int main() 
 {
-   int x;
-   int y;
-   int sum;
-   cin >> x;
-   cin >> y;
-   sum=x+y;
-   cout<< "sum of two numbers : " << sum;
-   return 0;
+    int num1;
+    int num2;
+    int result;
+    int choice;
+
+    cout<<"enter your choice. pick(1/2)"<< endl;
+    cout<<"1. addition"<< endl;
+    cout<<"2. subtraction"<< endl;
+    cin>> choice;
+
+    if (choice == 1)
+    {
+       //do addition
+       cout<<"enter first number"<< endl;
+       cin>>num1;
+       
+       cout<<"enter second number"<< endl;
+       cin<<num2;
+       result = num1+num2;
+       cout<<"result is "<< result;
+    }
+    else if (choice == 2)
+    {
+       // do subtraction
+       cout<<"enter first number"<< endl;
+       cin>>num1;
+  
+       cout<<"enter second number"<< endl;
+       cin>>num2;
+       result = num1-num2;
+       cout<<"result is "<< result;
+     }
+     else 
+     {
+       cout<<" enter a valid input"<< endl;
+     }
+     return 0;
 }
+
