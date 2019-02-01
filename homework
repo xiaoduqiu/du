@@ -1,0 +1,25 @@
+#include <iostream>
+ using namespace std;
+int main () {
+   int steps;
+   cout<<"enter the number of steps: ";
+   cin>>steps;
+   for(int i = 1; i <= steps; ++i)
+   {
+     for(int space = 1; space <= (steps-i)*2; ++space)
+     {
+       cout<<" ";
+     }
+       for(int j = 1; j <= i; ++j)
+       {
+         cout<<"j"<<" ";
+       }
+     for(int k = i; k > 1; k--)
+     {
+       cout<<k-1<<" ";
+     }
+     cout<<"\n";
+   }
+   return 0;
+}
+ 
